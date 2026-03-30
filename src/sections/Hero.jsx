@@ -26,6 +26,7 @@ function Hero() {
             className="size-full object-cover mask-logo"
           />
         </div>
+        {/* this is fake logo wrapper */}
         <div className="fake-logo-wrapper">
           <img src={bigHero} alt="fakeLogo" className="overlay-logo" />
         </div>
