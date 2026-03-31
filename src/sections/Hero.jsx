@@ -46,9 +46,16 @@ function Hero() {
       })
       .to(".mask-wrapper", { maskSize, ease: "power1.inOut" }, "<")
       .to(".mask-wrapper", { opacity: 0 })
-      .to(".overlay-logo", { opacity: 1, onComplete: () => {
-        gsap.to(".overlay-logo", {opacity: 0})
-      } }, "<")
+      .to(
+        ".overlay-logo",
+        {
+          opacity: 1,
+          onComplete: () => {
+            gsap.to(".overlay-logo", { opacity: 0 });
+          },
+        },
+        "<",
+      )
       .to(
         ".entrance-message",
         {
